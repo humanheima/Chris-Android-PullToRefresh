@@ -48,7 +48,7 @@ public final class PullToRefreshRecyclerViewActivity extends Activity {
     private LinkedList<String> mListItems;
     private PullToRefreshRecyclerView mPullRefreshRecyclerView;
     private RecyclerView mRecyclerView;
-    private ArrayAdapter<String> mAdapter;
+    private DefaultAdapter mAdapter;
 
     /**
      * Called when the activity is first created.
@@ -57,6 +57,7 @@ public final class PullToRefreshRecyclerViewActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ptr_recycler);
+        mListItems = new LinkedList<>();
         initViews();
     }
 
@@ -83,7 +84,8 @@ public final class PullToRefreshRecyclerViewActivity extends Activity {
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setAdapter(new DefaultAdapter());
+        mAdapter = new DefaultAdapter();
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     /**

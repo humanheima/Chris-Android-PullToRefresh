@@ -117,7 +117,8 @@ public class PullToRefreshRecyclerView extends PullToRefreshBase<RecyclerView> {
         View lastItemView = mRefreshableView.getChildAt(lastItemPosition);
         int lastVisiblePosition = mRefreshableView.getChildPosition(lastItemView);
         // 是否是最后一个Item View
-        if (lastVisiblePosition >= mRefreshableView.getAdapter().getItemCount() - 1) {
+        if (lastVisiblePosition >= mRefreshableView.getAdapter().getItemCount() - 1 &&
+                mRefreshableView.getChildAt(lastItemPosition) != null) {
             return mRefreshableView.getChildAt(lastItemPosition).getBottom() <= mRefreshableView.getBottom();
         }
         return false;

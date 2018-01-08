@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 16
-    buildToolsVersion "23.0.2"
+    compileSdkVersion = rootProject.ext.compileSdkVersion
+    buildToolsVersion = rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.handmark.pulltorefresh.samples"
-        minSdkVersion 8
-        targetSdkVersion 15
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
     }
 
     buildTypes {
@@ -19,8 +19,9 @@ android {
 }
 
 dependencies {
-    compile project(':library')
-    compile project(':pullToRefreshListFragment')
-    compile project(':pullToRefreshViewPager')
-    compile 'com.android.support:support-v4:18.0.0'
+    implementation project(':library')
+    implementation project(':pullToRefreshListFragment')
+    implementation project(':pullToRefreshViewPager')
+    implementation "com.android.support:support-v4:$rootProject.ext.supprotVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supprotVersion"
 }

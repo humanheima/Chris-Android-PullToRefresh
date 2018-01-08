@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 16
-    buildToolsVersion "23.0.2"
+
+    compileSdkVersion = rootProject.ext.compileSdkVersion
+    buildToolsVersion = rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 4
-        targetSdkVersion 14
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
     }
 
     buildTypes {
@@ -18,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile project(':library')
-    compile 'com.android.support:support-v4:18.0.0'
+    implementation project(':library')
+    implementation "com.android.support:support-v4:$rootProject.ext.supprotVersion"
 }
