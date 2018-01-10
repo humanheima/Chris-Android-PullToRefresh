@@ -26,48 +26,56 @@ import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
 public final class PullToRefreshScrollViewActivity extends Activity {
 
-	PullToRefreshScrollView mPullRefreshScrollView;
-	ScrollView mScrollView;
+    PullToRefreshScrollView mPullRefreshScrollView;
+    ScrollView mScrollView;
 
-	/** Called when the activity is first created. */
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_ptr_scrollview);
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ptr_scrollview);
 
-		mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.pull_refresh_scrollview);
-		mPullRefreshScrollView.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
+        mPullRefreshScrollView = findViewById(R.id.pull_refresh_scrollview);
+        mPullRefreshScrollView.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
 
-			@Override
-			public void onRefresh(PullToRefreshBase<ScrollView> refreshView) {
-				new GetDataTask().execute();
-			}
-		});
+            @Override
+            public void onRefresh(PullToRefreshBase<ScrollView> refreshView) {
+                new GetDataTask().execute();
+            }
+        });
 
-		mScrollView = mPullRefreshScrollView.getRefreshableView();
-	}
+        mScrollView = mPullRefreshScrollView.getRefreshableView();
+        mPullRefreshScrollView.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mPullRefreshScrollView.demo();
+            }
+        }, 300);
+    }
 
-	private class GetDataTask extends AsyncTask<Void, Void, String[]> {
+    private class GetDataTask extends AsyncTask<Void, Void, String[]> {
 
-		@Override
-		protected String[] doInBackground(Void... params) {
-			// Simulates a background job.
-			try {
-				Thread.sleep(4000);
-			} catch (InterruptedException e) {
-			}
-			return null;
-		}
+        @Override
+        protected String[] doInBackground(Void... params) {
+            // Simulates a background job.
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e) {
+            }
+            return null;
+        }
 
-		@Override
-		protected void onPostExecute(String[] result) {
-			// Do some stuff here
+        @Override
+        protected void onPostExecute(String[] result) {
+            // Do some stuff here
 
-			// Call onRefreshComplete when the list has been refreshed.
-			mPullRefreshScrollView.onRefreshComplete();
+            // Call onRefreshComplete when the list has been refreshed.
+            mPullRefreshScrollView.onRefreshComplete();
 
-			super.onPostExecute(result);
-		}
-	}
+            super.onPostExecute(result);
+        }
+    }
 
 }
