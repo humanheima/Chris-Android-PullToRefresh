@@ -15,39 +15,41 @@
  *******************************************************************************/
 package com.handmark.pulltorefresh.samples;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.handmark.pulltorefresh.library.PullToRefreshWebView;
 
-public final class PullToRefreshWebViewActivity extends Activity {
+public final class PullToRefreshWebViewActivity extends AppCompatActivity {
 
-	PullToRefreshWebView mPullRefreshWebView;
-	WebView mWebView;
+    PullToRefreshWebView mPullRefreshWebView;
+    WebView mWebView;
 
-	/** Called when the activity is first created. */
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_ptr_webview);
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ptr_webview);
 
-		mPullRefreshWebView = (PullToRefreshWebView) findViewById(R.id.pull_refresh_webview);
-		mWebView = mPullRefreshWebView.getRefreshableView();
+        mPullRefreshWebView = findViewById(R.id.pull_refresh_webview);
+        mWebView = mPullRefreshWebView.getRefreshableView();
 
-		mWebView.getSettings().setJavaScriptEnabled(true);
-		mWebView.setWebViewClient(new SampleWebViewClient());
-		mWebView.loadUrl("http://www.google.com");
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.setWebViewClient(new SampleWebViewClient());
+        mWebView.loadUrl("http://www.google.com");
 
-	}
+    }
 
-	private static class SampleWebViewClient extends WebViewClient {
-		@Override
-		public boolean shouldOverrideUrlLoading(WebView view, String url) {
-			view.loadUrl(url);
-			return true;
-		}
-	}
+    private static class SampleWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            view.loadUrl(url);
+            return true;
+        }
+    }
 
 }

@@ -21,6 +21,7 @@ import java.util.LinkedList;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -29,7 +30,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
-public final class PullToRefreshListFragmentActivity extends FragmentActivity implements OnRefreshListener<ListView> {
+public final class PullToRefreshListFragmentActivity extends AppCompatActivity implements OnRefreshListener<ListView> {
 
 	private LinkedList<String> mListItems;
 	private ArrayAdapter<String> mAdapter;

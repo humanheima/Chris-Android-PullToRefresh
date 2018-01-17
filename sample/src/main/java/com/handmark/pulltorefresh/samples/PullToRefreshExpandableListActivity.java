@@ -23,6 +23,7 @@ import java.util.Map;
 import android.app.ExpandableListActivity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 
@@ -30,88 +31,92 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshExpandableListView;
 
-public final class PullToRefreshExpandableListActivity extends ExpandableListActivity {
-	private static final String KEY = "key";
+public final class PullToRefreshExpandableListActivity extends AppCompatActivity {
+    private static final String KEY = "key";
 
-	private List<Map<String, String>> groupData = new ArrayList<Map<String, String>>();
-	private List<List<Map<String, String>>> childData = new ArrayList<List<Map<String, String>>>();
+    private List<Map<String, String>> groupData = new ArrayList<>();
+    private List<List<Map<String, String>>> childData = new ArrayList<>();
 
-	private PullToRefreshExpandableListView mPullRefreshListView;
-	private SimpleExpandableListAdapter mAdapter;
+    private PullToRefreshExpandableListView mPullRefreshListView;
+    private SimpleExpandableListAdapter mAdapter;
+    private ExpandableListView expandableListView;
 
-	/** Called when the activity is first created. */
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_ptr_expandable_list);
+    /**
+     * Called when the activity is first created.
+     */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ptr_expandable_list);
 
-		mPullRefreshListView = (PullToRefreshExpandableListView) findViewById(R.id.pull_refresh_expandable_list);
+        mPullRefreshListView = findViewById(R.id.pull_refresh_expandable_list);
+        expandableListView = mPullRefreshListView.getRefreshableView();
 
-		// Set a listener to be invoked when the list should be refreshed.
-		mPullRefreshListView.setOnRefreshListener(new OnRefreshListener<ExpandableListView>() {
-			@Override
-			public void onRefresh(PullToRefreshBase<ExpandableListView> refreshView) {
-				// Do work to refresh the list here.
-				new GetDataTask().execute();
-			}
-		});
+        // Set a listener to be invoked when the list should be refreshed.
+        mPullRefreshListView.setOnRefreshListener(new OnRefreshListener<ExpandableListView>() {
+            @Override
+            public void onRefresh(PullToRefreshBase<ExpandableListView> refreshView) {
+                // Do work to refresh the list here.
+                new GetDataTask().execute();
+            }
+        });
 
-		for (String group : mGroupStrings) {
-			Map<String, String> groupMap1 = new HashMap<String, String>();
-			groupData.add(groupMap1);
-			groupMap1.put(KEY, group);
+        for (String group : mGroupStrings) {
+            Map<String, String> groupMap1 = new HashMap<String, String>();
+            groupData.add(groupMap1);
+            groupMap1.put(KEY, group);
 
-			List<Map<String, String>> childList = new ArrayList<Map<String, String>>();
-			for (String string : mChildStrings) {
-				Map<String, String> childMap = new HashMap<String, String>();
-				childList.add(childMap);
-				childMap.put(KEY, string);
-			}
-			childData.add(childList);
-		}
+            List<Map<String, String>> childList = new ArrayList<Map<String, String>>();
+            for (String string : mChildStrings) {
+                Map<String, String> childMap = new HashMap<String, String>();
+                childList.add(childMap);
+                childMap.put(KEY, string);
+            }
+            childData.add(childList);
+        }
 
-		mAdapter = new SimpleExpandableListAdapter(this, groupData, android.R.layout.simple_expandable_list_item_1,
-				new String[] { KEY }, new int[] { android.R.id.text1 }, childData,
-				android.R.layout.simple_expandable_list_item_2, new String[] { KEY }, new int[] { android.R.id.text1 });
-		setListAdapter(mAdapter);
-	}
+        mAdapter = new SimpleExpandableListAdapter(this, groupData, android.R.layout.simple_expandable_list_item_1,
+                new String[]{KEY}, new int[]{android.R.id.text1}, childData,
+                android.R.layout.simple_expandable_list_item_2, new String[]{KEY}, new int[]{android.R.id.text1});
+        expandableListView.setAdapter(mAdapter);
+    }
 
-	private class GetDataTask extends AsyncTask<Void, Void, String[]> {
+    private class GetDataTask extends AsyncTask<Void, Void, String[]> {
 
-		@Override
-		protected String[] doInBackground(Void... params) {
-			// Simulates a background job.
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-			}
-			return mChildStrings;
-		}
+        @Override
+        protected String[] doInBackground(Void... params) {
+            // Simulates a background job.
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            return mChildStrings;
+        }
 
-		@Override
-		protected void onPostExecute(String[] result) {
-			Map<String, String> newMap = new HashMap<String, String>();
-			newMap.put(KEY, "Added after refresh...");
-			groupData.add(newMap);
+        @Override
+        protected void onPostExecute(String[] result) {
+            Map<String, String> newMap = new HashMap<String, String>();
+            newMap.put(KEY, "Added after refresh...");
+            groupData.add(newMap);
 
-			List<Map<String, String>> childList = new ArrayList<Map<String, String>>();
-			for (String string : mChildStrings) {
-				Map<String, String> childMap = new HashMap<String, String>();
-				childMap.put(KEY, string);
-				childList.add(childMap);
-			}
-			childData.add(childList);
+            List<Map<String, String>> childList = new ArrayList<Map<String, String>>();
+            for (String string : mChildStrings) {
+                Map<String, String> childMap = new HashMap<String, String>();
+                childMap.put(KEY, string);
+                childList.add(childMap);
+            }
+            childData.add(childList);
 
-			mAdapter.notifyDataSetChanged();
+            mAdapter.notifyDataSetChanged();
 
-			// Call onRefreshComplete when the list has been refreshed.
-			mPullRefreshListView.onRefreshComplete();
+            // Call onRefreshComplete when the list has been refreshed.
+            mPullRefreshListView.onRefreshComplete();
 
-			super.onPostExecute(result);
-		}
-	}
+            super.onPostExecute(result);
+        }
+    }
 
-	private String[] mChildStrings = { "Child One", "Child Two", "Child Three", "Child Four", "Child Five", "Child Six" };
+    private String[] mChildStrings = {"Child One", "Child Two", "Child Three", "Child Four", "Child Five", "Child Six"};
 
-	private String[] mGroupStrings = { "Group One", "Group Two", "Group Three" };
+    private String[] mGroupStrings = {"Group One", "Group Two", "Group Three"};
 }

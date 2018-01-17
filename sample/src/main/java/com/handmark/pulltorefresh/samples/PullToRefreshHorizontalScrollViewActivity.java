@@ -18,13 +18,14 @@ package com.handmark.pulltorefresh.samples;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.HorizontalScrollView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView;
 
-public final class PullToRefreshHorizontalScrollViewActivity extends Activity {
+public final class PullToRefreshHorizontalScrollViewActivity extends AppCompatActivity {
 
 	PullToRefreshHorizontalScrollView mPullRefreshScrollView;
 	HorizontalScrollView mScrollView;

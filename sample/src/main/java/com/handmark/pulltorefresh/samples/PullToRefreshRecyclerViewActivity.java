@@ -15,8 +15,8 @@
  *******************************************************************************/
 package com.handmark.pulltorefresh.samples;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public final class PullToRefreshRecyclerViewActivity extends Activity {
+public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
 
     private String[] mDataItems = {"Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",

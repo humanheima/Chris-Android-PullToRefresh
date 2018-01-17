@@ -15,28 +15,38 @@
  *******************************************************************************/
 package com.handmark.pulltorefresh.samples;
 
-import android.app.ListActivity;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-public class LauncherActivity extends ListActivity {
+import com.handmark.pulltorefresh.samples.databinding.ActivityLaunchBinding;
 
-    public static final String[] options = {"ListView", "ExpandableListView", "GridView", "WebView", "ScrollView",
-            "Horizontal ScrollView", "ViewPager", "ListView Fragment", "WebView Advanced", "ListView in ViewPager", "RecyclerView", "FrameLayout"};
+public class LauncherActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
+    public static final String[] options = {"ListView", "ExpandableListView", "GridView",
+            "WebView", "ScrollView",
+            "Horizontal ScrollView", "ViewPager", "ListView Fragment", "WebView Advanced",
+            "ListView in ViewPager", "RecyclerView", "FrameLayout", "SwitchRefreshLayout"};
+
+    private ActivityLaunchBinding binding;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setListAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, options));
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_launch);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, options);
+        binding.listview.setAdapter(adapter);
+        binding.listview.setOnItemClickListener(this);
     }
 
     @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent;
-
         switch (position) {
             default:
             case 0:
@@ -76,8 +86,10 @@ public class LauncherActivity extends ListActivity {
             case 11:
                 intent = new Intent(this, PullToRefreshFrameLayoutActivity.class);
                 break;
+            case 12:
+                intent = new Intent(this, SwipeRefreshLayoutActivity.class);
+                break;
         }
         startActivity(intent);
     }
-
 }

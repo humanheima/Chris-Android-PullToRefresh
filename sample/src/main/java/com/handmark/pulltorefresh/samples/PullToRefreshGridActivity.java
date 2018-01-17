@@ -21,6 +21,7 @@ import java.util.LinkedList;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +35,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshGridView;
 
-public final class PullToRefreshGridActivity extends Activity {
+public final class PullToRefreshGridActivity extends AppCompatActivity {
 
 	static final int MENU_SET_MODE = 0;
 

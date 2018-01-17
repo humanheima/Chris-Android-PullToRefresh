@@ -15,16 +15,16 @@
  *******************************************************************************/
 package com.handmark.pulltorefresh.samples;
 
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ScrollView;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 
-public final class PullToRefreshScrollViewActivity extends Activity {
+public final class PullToRefreshScrollViewActivity extends AppCompatActivity {
 
     PullToRefreshScrollView mPullRefreshScrollView;
     ScrollView mScrollView;
