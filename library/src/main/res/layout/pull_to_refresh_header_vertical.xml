@@ -63,6 +63,7 @@
                 android:visibility="gone"
                 tools:text="@string/pull_to_refresh_pull_label" />
         </LinearLayout>
+
     </FrameLayout>
 
 </merge>

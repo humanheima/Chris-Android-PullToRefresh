@@ -9,8 +9,11 @@
         android:id="@+id/pull_refresh_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ptr:ptrAnimationStyle="flip"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        ptr:ptrDrawableStart="@drawable/default_ptr_rotate"
         ptr:ptrMode="both"
-        ptr:ptrShowIndicator="false" />
+        ptr:ptrRefreshableViewBackground="#000000"
+        ptr:ptrRotateDrawableWhilePulling="true" />
 
 </LinearLayout>

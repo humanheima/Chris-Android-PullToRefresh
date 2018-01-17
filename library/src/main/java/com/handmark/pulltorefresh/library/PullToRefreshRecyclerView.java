@@ -63,6 +63,7 @@ package com.handmark.pulltorefresh.library;
 
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
@@ -86,6 +87,14 @@ public class PullToRefreshRecyclerView extends PullToRefreshBase<RecyclerView> {
 
     public PullToRefreshRecyclerView(Context context, Mode mode, AnimationStyle style) {
         super(context, mode, style);
+    }
+
+
+    @Override
+    protected void handleStyledAttributes(TypedArray a) {
+        if (a.hasValue(R.styleable.PullToRefresh_ptrShowIndicator)){
+
+        }
     }
 
     @Override

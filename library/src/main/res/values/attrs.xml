@@ -4,6 +4,7 @@
     <declare-styleable name="PullToRefresh">
 
         <!-- A drawable to use as the background of the Refreshable View -->
+        <!--整个可刷新View的背景色-->
         <attr name="ptrRefreshableViewBackground" format="reference|color" />
 
         <!-- A drawable to use as the background of the Header and Footer Loading Views -->
@@ -69,6 +70,7 @@
         	Whether the Drawable should be continually rotated as you pull. This only
         	takes effect when using the 'Rotate' Animation Style.
         -->
+        <!--当动画效果为rotate的时候，Drawable 会随着你手指的拖动旋转-->
         <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
 
         <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
