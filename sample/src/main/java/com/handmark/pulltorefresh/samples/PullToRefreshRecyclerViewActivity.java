@@ -17,8 +17,10 @@ package com.handmark.pulltorefresh.samples;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
@@ -34,6 +36,8 @@ import java.util.List;
 public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
 
     private String[] mDataItems = {"Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
+            "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
+            "Allgauer Emmentaler", "Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
             "Allgauer Emmentaler"};
 
@@ -56,7 +60,7 @@ public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
         loadAllView = getLayoutInflater().inflate(R.layout.item_load_all, null);
         mPullRefreshRecyclerView = findViewById(R.id.pull_refresh_recycler);
         mRecyclerView = mPullRefreshRecyclerView.getRefreshableView();
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.setHasFixedSize(true);
         adapter = new CommonAdapter<String>(this, dataList) {
             @Override

@@ -19,11 +19,9 @@ public class CommonViewHolder extends RecyclerView.ViewHolder {
 
     private SparseArray<View> mViews;
 
-    private View itemView;
 
     protected CommonViewHolder(View itemView) {
         super(itemView);
-        this.itemView = itemView;
         mViews = new SparseArray<>();
     }
 

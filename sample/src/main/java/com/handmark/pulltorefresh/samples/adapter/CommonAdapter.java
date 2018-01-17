@@ -1,7 +1,9 @@
 package com.handmark.pulltorefresh.samples.adapter;
 
 import android.content.Context;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -83,4 +85,37 @@ public abstract class CommonAdapter<T> extends RecyclerView.Adapter<CommonViewHo
         }
     }
 
+    /**
+     * 设置网格布局footView占据一整行
+     */
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
+        if (manager instanceof GridLayoutManager) {
+            final GridLayoutManager gridLayoutManager = ((GridLayoutManager) manager);
+            gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                @Override
+                public int getSpanSize(int position) {
+                    return getItemViewType(position) == R.layout.item_load_all ? gridLayoutManager.getSpanCount() : 1;
+                }
+            });
+        }
+    }
+
+    /**
+     * 设置瀑布流布局footView占据一整行
+     */
+    @Override
+    public void onViewAttachedToWindow(CommonViewHolder holder) {
+        super.onViewAttachedToWindow(holder);
+        int lastItemPosition = holder.getAdapterPosition();
+        if (getItemViewType(lastItemPosition) == R.layout.item_load_all) {
+            ViewGroup.LayoutParams lp = holder.itemView.getLayoutParams();
+            if (lp != null && lp instanceof StaggeredGridLayoutManager.LayoutParams) {
+                StaggeredGridLayoutManager.LayoutParams p = ((StaggeredGridLayoutManager.LayoutParams) lp);
+                p.setFullSpan(true);
+            }
+        }
+    }
 }

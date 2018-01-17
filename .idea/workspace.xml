@@ -11,35 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cec0080-127f-4913-b9bf-3fa94075ce54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/SwipeRefreshLayoutActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/src/main/res/layout/activity_launch.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample/src/main/res/layout/activity_swipe_refresh_layout.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/build/generated/source/buildConfig/debug/com/handmark/pulltorefresh/samples/BuildConfig.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build.gradle" afterPath="$PROJECT_DIR$/sample/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/sample/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/extras/listfragment/R.java" afterPath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/extras/listfragment/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/extras/viewpager/R.java" afterPath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/extras/viewpager/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/library/R.java" afterPath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/library/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/samples/R.java" afterPath="$PROJECT_DIR$/sample/build/generated/source/r/debug/com/handmark/pulltorefresh/samples/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/sample.iml" afterPath="$PROJECT_DIR$/sample/sample.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/LauncherActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/LauncherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshExpandableListActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshExpandableListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshFrameLayoutActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshFrameLayoutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshGridActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshGridActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshHorizontalScrollViewActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshHorizontalScrollViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListFragmentActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListFragmentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListInViewPagerActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListInViewPagerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sample/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/sample/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/sample/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshScrollViewActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshScrollViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshViewPagerActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshViewPagerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshWebView2Activity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshWebView2Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshWebViewActivity.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshWebViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/res/layout/activity_ptr_recycler.xml" afterPath="$PROJECT_DIR$/sample/src/main/res/layout/activity_ptr_recycler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/sample/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java" afterPath="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java" />
     </list>
     <list id="2f6eb879-9f61-4be8-bb33-afd34779c493" name="完善git ignore" comment="" />
     <ignored path="sample.iws" />
@@ -72,11 +50,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SwipeRefreshLayoutActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/SwipeRefreshLayoutActivity.java">
+      <file leaf-file-name="CommonViewHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="-462">
+              <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PullToRefreshRecyclerViewActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -4214,9 +4212,7 @@
         <option value="$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshWebView.java" />
         <option value="$PROJECT_DIR$/sample/src/main/res/layout/activity_ptr_recycler_item.xml" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/interfaces/OnItemClickListener.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/interfaces/ItemTypeCallBack.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java" />
         <option value="$PROJECT_DIR$/library/src/main/res/layout/pull_to_refresh_header_horizontal.xml" />
         <option value="$PROJECT_DIR$/library/src/main/res/drawable/ptr_progressbar_loading.xml" />
         <option value="$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/IPullToRefresh.java" />
@@ -4234,7 +4230,6 @@
         <option value="$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshRecyclerView.java" />
         <option value="$PROJECT_DIR$/library/src/main/res/layout/pull_to_refresh_header_vertical.xml" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshFrameLayoutActivity.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java" />
         <option value="$PROJECT_DIR$/sample/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/sample/src/main/res/layout/activity_ptr_recycler.xml" />
         <option value="$PROJECT_DIR$/sample/build.gradle" />
@@ -4253,6 +4248,9 @@
         <option value="$PROJECT_DIR$/sample/src/main/res/layout/activity_launch.xml" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListActivity.java" />
         <option value="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java" />
       </list>
     </option>
   </component>
@@ -4292,80 +4290,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Gradle Scripts" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chris-Android-PullToRefresh" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chris-Android-PullToRefresh" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chris-Android-PullToRefresh" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chris-Android-PullToRefresh" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chris-Android-PullToRefresh" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -4517,7 +4441,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="750ABL34492X" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_16" />
     <property name="device.picker.selection" value="151fe51b" />
-    <property name="SearchEverywhereHistoryKey" value="PullToRefreshExpandableListActivity&#9;FILE&#9;file://D:/github/Chris-Android-PullToRefresh/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshExpandableListActivity.java&#10;Launch&#9;FILE&#9;file://D:/github/Chris-Android-PullToRefresh/sample/src/main/java/com/handmark/pulltorefresh/samples/LauncherActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/github/Chris-Android-PullToRefresh/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java&#10;PullToRefreshExpandableListActivity&#9;FILE&#9;file://D:/github/Chris-Android-PullToRefresh/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshExpandableListActivity.java&#10;Launch&#9;FILE&#9;file://D:/github/Chris-Android-PullToRefresh/sample/src/main/java/com/handmark/pulltorefresh/samples/LauncherActivity.java" />
     <property name="android.profiler.active" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/sample/.gitignore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SwipeToLoadLayout" />
@@ -4621,7 +4545,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516170292932" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516175604518" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -4669,7 +4593,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516170292932" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516175604518" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -4852,7 +4776,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516170292933" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516175604519" />
       </method>
     </configuration>
     <list size="1">
@@ -5028,7 +4952,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516160077759</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="使用SwipeRefreshLayout,修改App Theme">
+      <created>1516170326013</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516170326013</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -5059,12 +4990,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3084833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -5163,7 +5094,8 @@
     <MESSAGE value="完善git ignore" />
     <MESSAGE value="测试PullToRefreshFrameLayout" />
     <MESSAGE value="探索各种属性的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="探索各种属性的使用" />
+    <MESSAGE value="使用SwipeRefreshLayout,修改App Theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用SwipeRefreshLayout,修改App Theme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5172,48 +5104,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/src/main/res/drawable-xxhdpi/indicator_arrow.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/res/drawable-hdpi/default_ptr_rotate.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/LoadingLayoutProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/ILoadingLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/IPullToRefresh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="68" column="10" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-26/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="23418" column="19" lean-forward="false" selection-start-line="23418" selection-start-column="19" selection-end-line="23418" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-776">
@@ -5252,8 +5142,8 @@
         <state relative-caret-position="226">
           <caret line="105" column="19" lean-forward="false" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
           <folding>
-            <element signature="e#3921#3922#0" expanded="true" />
-            <element signature="e#3973#3974#0" expanded="true" />
+            <element signature="e#3921#3922#0" expanded="false" />
+            <element signature="e#3973#3974#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -5389,10 +5279,10 @@
         <state relative-caret-position="226">
           <caret line="556" column="16" lean-forward="false" selection-start-line="556" selection-start-column="16" selection-end-line="556" selection-end-column="16" />
           <folding>
-            <element signature="e#14670#14671#0" expanded="true" />
-            <element signature="e#14706#14707#0" expanded="true" />
-            <element signature="e#16019#16226#0" expanded="true" />
-            <element signature="e#16225#16226#0" expanded="true" />
+            <element signature="e#14670#14671#0" expanded="false" />
+            <element signature="e#14706#14707#0" expanded="false" />
+            <element signature="e#16019#16226#0" expanded="false" />
+            <element signature="e#16225#16226#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -5544,14 +5434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshListInViewPagerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -5629,8 +5511,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/SwipeRefreshLayoutActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-1572">
           <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/27.0.2/76f4751bc97ce7fa2362dc5a38b39089066a2c99/recyclerview-v7-27.0.2-sources.jar!/android/support/v7/widget/GridLayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="259" column="16" lean-forward="false" selection-start-line="259" selection-start-column="16" selection-end-line="259" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/res/layout/activity_ptr_recycler_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/27.0.2/76f4751bc97ce7fa2362dc5a38b39089066a2c99/recyclerview-v7-27.0.2-sources.jar!/android/support/v7/widget/RecyclerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="10533" column="70" lean-forward="false" selection-start-line="10533" selection-start-column="63" selection-end-line="10533" selection-end-column="70" />
+          <folding>
+            <element signature="e#292686#292687#0" expanded="true" />
+            <element signature="e#292737#292738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/27.0.2/76f4751bc97ce7fa2362dc5a38b39089066a2c99/recyclerview-v7-27.0.2-sources.jar!/android/support/v7/widget/StaggeredGridLayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="2438" column="20" lean-forward="false" selection-start-line="2438" selection-start-column="20" selection-end-line="2438" selection-end-column="20" />
+          <folding>
+            <element signature="e#97439#97440#0" expanded="true" />
+            <element signature="e#97483#97484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/PullToRefreshRecyclerViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/handmark/pulltorefresh/samples/adapter/CommonAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
