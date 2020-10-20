@@ -60,6 +60,9 @@
         <activity android:name=".PullToRefreshRecyclerViewActivity" />
         <activity android:name=".PullToRefreshFrameLayoutActivity" />
         <activity android:name=".SwipeRefreshLayoutActivity" />
+
+        <activity android:name=".PullToRefreshHorizontalRecyclerViewActivity" />
+
     </application>
 
 </manifest>

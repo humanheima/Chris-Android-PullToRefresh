@@ -15,15 +15,16 @@
  *******************************************************************************/
 package com.handmark.pulltorefresh.samples;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
-import com.handmark.pulltorefresh.library.PullToRefreshRecyclerView;
+import com.handmark.pulltorefresh.library.PullToRefreshHorizontalRecyclerView;
 import com.handmark.pulltorefresh.samples.adapter.CommonAdapter;
 import com.handmark.pulltorefresh.samples.adapter.CommonViewHolder;
 
@@ -31,7 +32,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
+/**
+ * Created by dumingwei on 2020/10/20
+ * <p>
+ * Desc: 横向刷新的RecyclerView
+ */
+public final class PullToRefreshHorizontalRecyclerViewActivity extends AppCompatActivity {
 
     private String[] mDataItems = {"Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
             "Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
@@ -40,16 +46,21 @@ public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
             "Allgauer Emmentaler"};
 
     private List<String> dataList;
-    private PullToRefreshRecyclerView mPullRefreshRecyclerView;
+    private PullToRefreshHorizontalRecyclerView mPullRefreshRecyclerView;
     private RecyclerView mRecyclerView;
     private int page = 1;
     private View loadAllView;
     private CommonAdapter<String> adapter;
 
+    public static void launch(Context context) {
+        Intent starter = new Intent(context, PullToRefreshHorizontalRecyclerViewActivity.class);
+        context.startActivity(starter);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ptr_recycler);
+        setContentView(R.layout.activity_ptr_horizontal_recycler);
         dataList = new ArrayList<>();
         initViews();
     }
@@ -59,7 +70,7 @@ public final class PullToRefreshRecyclerViewActivity extends AppCompatActivity {
         mPullRefreshRecyclerView = findViewById(R.id.pull_refresh_recycler);
         mRecyclerView = mPullRefreshRecyclerView.getRefreshableView();
         //mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setHasFixedSize(true);
         adapter = new CommonAdapter<String>(this, dataList) {
             @Override

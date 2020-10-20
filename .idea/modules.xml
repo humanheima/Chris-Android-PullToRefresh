@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chris-Android-PullToRefresh.iml" filepath="$PROJECT_DIR$/Chris-Android-PullToRefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/pullToRefreshListFragment/pullToRefreshListFragment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/pullToRefreshViewPager/pullToRefreshViewPager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/Chris-Android-PullToRefresh.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/Chris-Android-PullToRefresh.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pullToRefreshListFragment/Chris-Android-PullToRefresh.pullToRefreshListFragment.iml" filepath="$PROJECT_DIR$/.idea/modules/pullToRefreshListFragment/Chris-Android-PullToRefresh.pullToRefreshListFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pullToRefreshViewPager/Chris-Android-PullToRefresh.pullToRefreshViewPager.iml" filepath="$PROJECT_DIR$/.idea/modules/pullToRefreshViewPager/Chris-Android-PullToRefresh.pullToRefreshViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/Chris-Android-PullToRefresh.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/Chris-Android-PullToRefresh.sample.iml" />
     </modules>
   </component>
 </project>

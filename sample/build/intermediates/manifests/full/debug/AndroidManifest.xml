@@ -66,6 +66,7 @@
         <activity android:name="com.handmark.pulltorefresh.samples.PullToRefreshRecyclerViewActivity" />
         <activity android:name="com.handmark.pulltorefresh.samples.PullToRefreshFrameLayoutActivity" />
         <activity android:name="com.handmark.pulltorefresh.samples.SwipeRefreshLayoutActivity" />
+        <activity android:name="com.handmark.pulltorefresh.samples.PullToRefreshHorizontalRecyclerViewActivity" />
     </application>
 
 </manifest>

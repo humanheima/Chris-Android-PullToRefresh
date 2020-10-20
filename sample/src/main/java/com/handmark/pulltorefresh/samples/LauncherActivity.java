@@ -30,7 +30,7 @@ public class LauncherActivity extends AppCompatActivity implements AdapterView.O
     public static final String[] options = {"ListView", "ExpandableListView", "GridView",
             "WebView", "ScrollView",
             "Horizontal ScrollView", "ViewPager", "ListView Fragment", "WebView Advanced",
-            "ListView in ViewPager", "RecyclerView", "FrameLayout", "SwitchRefreshLayout"};
+            "ListView in ViewPager", "RecyclerView", "FrameLayout", "SwitchRefreshLayout", "HorizontalRecyclerView"};
 
     private ActivityLaunchBinding binding;
     private ArrayAdapter<String> adapter;
@@ -88,6 +88,9 @@ public class LauncherActivity extends AppCompatActivity implements AdapterView.O
                 break;
             case 12:
                 intent = new Intent(this, SwipeRefreshLayoutActivity.class);
+                break;
+            case 13:
+                intent = new Intent(this, PullToRefreshHorizontalRecyclerViewActivity.class);
                 break;
         }
         startActivity(intent);
