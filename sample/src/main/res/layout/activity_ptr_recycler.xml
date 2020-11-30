@@ -13,6 +13,7 @@
         ptr:ptrDrawableEnd="@drawable/default_ptr_rotate"
         ptr:ptrDrawableStart="@drawable/default_ptr_rotate"
         ptr:ptrMode="both"
+        ptr:ptrOverScroll="false"
         ptr:ptrRefreshableViewBackground="#ffffff"
         ptr:ptrRotateDrawableWhilePulling="true" />
 

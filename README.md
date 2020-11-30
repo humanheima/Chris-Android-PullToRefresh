@@ -4,6 +4,8 @@
 
 * * *
 
+Android-PullToRefresh的源码分析可以参考 [Android之PullToRefresh控件源码解析](https://blog.csdn.net/hai_qing_xu_kong/article/details/73802453)
+
 # Pull To Refresh Views for Android
 
 ![Screenshot](https://github.com/chrisbanes/Android-PullToRefresh/raw/master/header_graphic.png)
@@ -23,6 +25,7 @@ This project aims to provide a reusable Pull to Refresh widget for Android. It w
  	* **ScrollView**
  	* **HorizontalScrollView**
  	* **ViewPager**
+ 	* **RecyclerView**
  * Integrated End of List Listener for use of detecting when the user has scrolled to the bottom.
  * Maven Support.
  * Indicators to show the user when a Pull-to-Refresh is available.

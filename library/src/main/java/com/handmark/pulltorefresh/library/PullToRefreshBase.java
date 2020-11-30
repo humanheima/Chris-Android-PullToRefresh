@@ -913,7 +913,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
         }
 
         if (DEBUG) {
-            Log.d(LOG_TAG, String.format("Setting Padding. L: %d, T: %d, R: %d, B: %d", pLeft, pTop, pRight, pBottom));
+            Log.e(LOG_TAG, String.format("Setting Padding. L: %d, T: %d, R: %d, B: %d", pLeft, pTop, pRight, pBottom));
         }
         setPadding(pLeft, pTop, pRight, pBottom);
     }
@@ -947,7 +947,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
      */
     protected final void setHeaderScroll(int value) {
         if (DEBUG) {
-            Log.d(LOG_TAG, "setHeaderScroll: " + value);
+            Log.e(LOG_TAG, "setHeaderScroll: " + value);
         }
 
         // Clamp value to with pull scroll range
